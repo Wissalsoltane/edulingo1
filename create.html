@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Create Course</title>
+</head>
+
+<body>
+	<h1>Add a new course</h1>
+	<form action="create.php" method="post">
+		<p>Name: <input type="text" name="name"></p>
+		<p>Type: <select name="type">
+				<option>pdf</option>
+				<option>video</option>
+			</select></p>
+		<p>Skill: <select type="text" name="skill">
+				<option>Listening</option>
+				<option>Reading</option>
+				<option>Writing</option>
+				<option>Speaking</option>
+			</select></p>
+		<p>Level: <input type="text" name="level"></p>
+		<p>File: <input type="file" name="file"
+				accept="application/pdf; video/mp4; video/x-m4v; video/quicktime; video/webm; "></p>
+		<input type="submit" value="Add">
+	</form>
+</body>
